@@ -1,109 +1,113 @@
 # HAK3R Portfolio
 
-This project is a free and open source portfolio template built for cybersecurity professionals using **Flowbite React** and **Vite**.
+A modern, responsive portfolio template built specifically for cybersecurity professionals. Built with React, TypeScript, and Flowbite React components, it offers a sleek design with light/dark mode support.
 
-## Features
+## 🚀 Live Demo
 
-- **Modern UI:** Built with React and Flowbite components for a sleek, responsive design.
-- **Light/Dark Mode:** Seamless switching between light and dark themes.
-- **Optimized Performance:** Leveraging Vite for fast builds and Hot Module Replacement (HMR).
-- **Customizable:** Easily modify components to suit your personal branding.
-- **ESLint Configured:** Includes recommended rules with tips for production-grade, type-aware linting.
+Check out the live demo at [https://hak3r.getcyber.me](https://hak3r.getcyber.me)
 
-## Live Demo
+## ✨ Features
 
-[View the live demo](#) *(update this link when available)*
+- **Responsive Design:** Fully responsive layout that works on all devices
+- **Dark/Light Mode:** System-aware theme that respects user preferences
+- **Modern Stack:** Built with React 18, TypeScript, and Vite
+- **Optimized Build:** Production-ready with static file exports
+- **Component Library:** Leverages Flowbite React for consistent UI
+- **Performance Focused:** Fast page loads and smooth animations
+- **SEO Ready:** Includes meta tags and OpenGraph support
+- **Easy Customization:** Well-organized codebase for easy modifications
 
-## Getting Started
+## 🛠️ Tech Stack
 
-### Prerequisites
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- Flowbite React
+- ESLint & Prettier
 
-- [Node.js](https://nodejs.org/) (v14 or later)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+## 📦 Installation
 
-### Installation
-
-Clone the repository and install dependencies:
-
+1. Clone the repository:
 ```bash
 git clone https://github.com/Dan-Duran/hak3r.git
 cd hak3r
+```
+
+2. Install dependencies:
+```bash
 npm install
 ```
 
-### Running the Project
-
-Start the development server:
-
+3. Start the development server:
 ```bash
 npm run dev
 ```
 
-Then open your browser at [http://localhost:3000](http://localhost:3000) to view the portfolio.
+## 🏗️ Building for Production (folder dist)
 
-### Building for Production
-
-Create an optimized production build:
-
+Create a production build:
 ```bash
 npm run build
 ```
 
-You can preview the production build with:
-
+Preview the production build:
 ```bash
 npm run preview
 ```
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 hak3r/
-├── public/              # Static assets (images, CSS, etc.)
-├── src/                 # React components and application code
-│   ├── components/      # Reusable components (e.g., Nav, Footer)
-│   └── App.tsx          # Main application component
+├── public/
+│   └── assets/
+│       ├── css/
+│       ├── images/
+│       └── js/
+├── src/
+│   ├── components/
+│   │   ├── Nav.tsx
+│   │   └── Footer.tsx
+│   ├── App.tsx
+│   └── main.tsx
+├── index.html
 ├── package.json
 ├── tsconfig.json
-└── README.md
+├── vite.config.ts
+└── tailwind.config.js
 ```
 
-## ESLint Configuration
+## 🔧 Configuration
 
-For production applications, it is recommended to enable type-aware lint rules. In your ESLint configuration, set up your parser options as follows:
+### Vite Config
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-  extends: [
-    "plugin:@typescript-eslint/recommended-type-checked",
-    // Optionally add:
-    "plugin:@typescript-eslint/stylistic-type-checked"
-  ],
-};
-```
+The project uses a custom Vite configuration for optimal production builds:
+- Static file exports
+- Asset optimization
+- Proper path resolution
+- Custom JS handling
 
-## Technologies Used
+## 🚀 Deployment
 
-- [React](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Vite](https://vitejs.dev/)
-- [Flowbite React](https://flowbite-react.com/)
+The site can be deployed to any static hosting service. The production build outputs to the `dist` folder.
 
-## About
+## 🤝 Contributing
 
-HAK3R Portfolio is designed for professionals who want to showcase their expertise with a modern, professional portfolio. Customize the template to highlight your projects, experience, and unique skills in the cybersecurity field.
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
 
-## License
+## 📝 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 Author
+
+**Dan Duran** - [GetCyber](https://getcyber.me)
 
 ---
 
-Feel free to contribute, raise issues, or suggest enhancements.
+Made with ❤️ by GetCyber
