@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!logo) return;
             
             // Initial setup
-            logo.style.display = 'hidden md:flex';
+            logo.style.display = 'flex';
             logo.style.opacity = '0';
             logo.style.transform = 'translate3d(50px, 20px, 0) rotate(5deg)';
             logo.style.transition = 'all 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55)';

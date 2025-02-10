@@ -68,7 +68,7 @@ const App: React.FC = () => {
         </div>
         <div 
           id="hacker-logo" 
-          className="hidden md:flex lg:mt-0 lg:col-span-5 lg:flex relative z-10"
+          className="lg:mt-0 lg:col-span-5 lg:flex relative z-10"
           style={{ opacity: 0 }}  // This ensures it's initially invisible but still rendered
         >
           <img
