@@ -53,11 +53,11 @@ const Nav: React.FC = () => {
 
   return (
     <Navbar 
-      className={`fixed w-full transition-all duration-300 ${
-        isScrolled 
-          ? 'z-50 py-1 bg-white dark:bg-black shadow-lg' 
-          : 'z-50 py-4 bg-transparent dark:bg-transparent'
-      }`} 
+    className={`fixed w-full transition-all duration-300 ${
+      isScrolled 
+        ? 'z-50 py-1 bg-white dark:bg-black shadow-lg md:bg-white md:dark:bg-black' 
+        : 'z-50 py-4 bg-white dark:bg-black md:bg-transparent md:dark:bg-transparent'
+    }`}
       fluid
     >
       <Navbar.Brand href="/">
@@ -80,7 +80,7 @@ const Nav: React.FC = () => {
         href="https://github.com/Dan-Duran/hak3r"
         target="_blank"
         rel="noopener noreferrer"
-        className={`mx-3 bg-gray-800 hover:bg-gray-900 py-2 px-4 transition-all duration-300 flex items-center gap-2 ${
+        className={`hidden md:flex mx-3 bg-gray-800 hover:bg-gray-900 py-2 px-4 transition-all duration-300 flex items-center gap-2 ${
           isScrolled ? 'scale-90' : 'scale-100'
         }`}
       >
@@ -116,7 +116,7 @@ const Nav: React.FC = () => {
             key={section}
             onClick={() => scrollToSection(section)}
             className={`block pr-4 pl-3 border-b border-gray-100 text-gray-700 hover:bg-gray-50 font-bold dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-green-700 md:dark:hover:bg-transparent md:dark:hover:text-white transition-all duration-300 ${
-              isScrolled ? 'text-base md:text-lg py-1.5' : 'text-lg md:text-xl py-2'
+              isScrolled ? 'text-base text-3xl md:text-lg py-2' : 'text-3xl md:text-xl py-2.5'
             }`}
           >
             {section.charAt(0).toUpperCase() + section.slice(1)}

@@ -23,7 +23,8 @@ const App: React.FC = () => {
       
       {/* #### HERO SECTION #### */}
       
-      <section className="bg-white dark:bg-black">
+      <section className="pt-20 md:pt-0 bg-white dark:bg-black">
+
       <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-32 lg:grid-cols-12 relative z-10">
         <div className="mr-auto place-self-center lg:col-span-7">
         <h1
@@ -36,8 +37,8 @@ const App: React.FC = () => {
             </span>
           </h1>
 
-          <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-          I deliver cutting-edge cybersecurity services that safeguard your digital assets. From deep-dive penetration testing to proactive threat monitoring, I provide tailored solutions to secure your network and protect your business. Trust a proven professional to keep you one step ahead of cyber threats.
+          <p className="max-w-2xl mb-6 font-bold text-gray-500 lg:mb-8 text-3xl dark:text-gray-400">
+          From deep-dive penetration testing to proactive threat monitoring, I provide tailored solutions to secure your network and protect your business.
 
           </p>
           <a
@@ -67,7 +68,7 @@ const App: React.FC = () => {
         </div>
         <div 
           id="hacker-logo" 
-          className="lg:mt-0 lg:col-span-5 lg:flex relative z-10"
+          className="hidden md:flex lg:mt-0 lg:col-span-5 lg:flex relative z-10"
           style={{ opacity: 0 }}  // This ensures it's initially invisible but still rendered
         >
           <img
@@ -110,10 +111,10 @@ const App: React.FC = () => {
           <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 text-center">
 
               <div className="max-w-screen-md mb-8 lg:mb-12 mx-auto">
-                <h2 className="mb-4 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                <h2 className="mb-4 text-4xl md:text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">
                 Breaking Systems, Building Security
                 </h2>
-                <p className="text-gray-500 sm:text-xl dark:text-gray-400">
+                <p className="text-gray-500 text-2xl dark:text-gray-400">
                 Specialized in uncovering critical security vulnerabilities through advanced penetration testing, helping organizations fortify their digital infrastructure before real threats emerge.
                 </p>
               </div>
@@ -140,7 +141,7 @@ const App: React.FC = () => {
                     </svg>
                   </div>
                   <h3 className="mb-2 text-3xl font-bold dark:text-white">Penetration Testing</h3>
-                  <p className="text-gray-500 text-md dark:text-gray-400">
+                  <p className="text-gray-500 text-xl dark:text-gray-400">
                     Comprehensive security assessment simulating real-world attacks to identify vulnerabilities in your systems, networks, and applications before malicious actors can exploit them.
                   </p>
                 </div>
@@ -153,7 +154,7 @@ const App: React.FC = () => {
 
                   </div>
                   <h3 className="mb-2 text-3xl font-bold dark:text-white">Web App Security</h3>
-                  <p className="text-gray-500 text-md dark:text-gray-400">
+                  <p className="text-gray-500 text-xl dark:text-gray-400">
                   In-depth analysis and testing of web applications to uncover security flaws, injection vulnerabilities, authentication weaknesses, and other critical risks affecting your platforms.
                   </p>
                 </div>
@@ -165,7 +166,7 @@ const App: React.FC = () => {
 
                   </div>
                   <h3 className="mb-2 text-3xl font-bold dark:text-white">Network Infrastructure</h3>
-                  <p className="text-gray-500 text-md dark:text-gray-400">
+                  <p className="text-gray-500 text-xl dark:text-gray-400">
                   Thorough evaluation of network architecture, firewall configurations, access controls, and routing protocols to ensure robust security across your entire digital infrastructure.
                   </p>
                 </div>
@@ -177,7 +178,7 @@ const App: React.FC = () => {
 
                   </div>
                   <h3 className="mb-2 text-3xl font-bold dark:text-white">Security Consultation</h3>
-                  <p className="text-gray-500 text-md dark:text-gray-400">
+                  <p className="text-gray-500 text-xl dark:text-gray-400">
                   Strategic guidance and expert recommendations to strengthen your security posture, implement industry best practices, and develop effective incident response procedures.
                   </p>
                 </div>
@@ -188,7 +189,7 @@ const App: React.FC = () => {
                 </svg>
                   </div>
                   <h3 className="mb-2 text-3xl font-bold dark:text-white">Bug Hunting</h3>
-                  <p className="text-gray-500 text-md dark:text-gray-400">
+                  <p className="text-gray-500 text-xl dark:text-gray-400">
                   Discovered and responsibly disclosed over 50 critical vulnerabilities in major platforms, contributing to the security of millions of users worldwide through ethical hacking.
                   </p>
                 </div>
@@ -200,7 +201,7 @@ const App: React.FC = () => {
 
                   </div>
                   <h3 className="mb-2 text-3xl font-bold dark:text-white">Security Training</h3>
-                  <p className="text-gray-500 text-md dark:text-gray-400">
+                  <p className="text-gray-500 text-xl dark:text-gray-400">
                   Customized training programs to educate your team about current security threats, defensive techniques, secure coding practices, and cybersecurity best practices.
                   </p>
                 </div>
@@ -212,7 +213,7 @@ const App: React.FC = () => {
 
           <section className="bg-gray-100 dark:bg-black lg:py-18 lg:px-6 border-t-4 border-b-4 border-solid border-green-700 bg-white dark:bg-black relative z-20">
             <div className="py-8 lg:py-16 mx-auto max-w-screen-xl px-4 ">
-                <h2 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">Companies I've Worked For</h2>
+                <h2 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">Clients</h2>
                 <div className="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
                     <a href="#" className="flex justify-center items-center">
                         <svg className="h-9 hover:text-gray-900 dark:hover:text-white" viewBox="0 0 125 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -280,10 +281,10 @@ const App: React.FC = () => {
               <h2 className="mb-4 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">
                 About Me, HAK3R
               </h2>
-              <p className="mb-4 text-2xl">
+              <p className="mb-4 text-3xl">
               I've dedicated my career to finding the vulnerabilities that others miss. My journey began with CTF competitions and evolved into a full-time commitment to making digital spaces more secure.
               </p>
-              <p>
+              <p className="text-xl">
              My approach combines creative problem-solving with rigorous methodology, ensuring no stone is left unturned in the pursuit of robust security.
               </p>
               <a href="#" className="inline-flex mt-8 items-center justify-center px-5 py-4 text-base font-medium text:3xl text-center text-gray-900 border-4 border-green-300  hover:bg-green-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-green-700 dark:hover:bg-green-700 dark:focus:ring-gray-800"
@@ -351,10 +352,10 @@ const App: React.FC = () => {
               <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
               Ready to Strengthen Your Security Posture?
               </h2>
-              <p className="mb-6 font-light text-gray-500 md:text-lg lg:text-2xl dark:text-gray-400">
+              <p className="mb-6 font-light text-gray-500 text-xl lg:text-2xl dark:text-gray-400">
               Let's connect and discuss how I can help identify vulnerabilities in your systems before malicious actors do.
               </p>
-              <p className="mb-6 font-light text-gray-500 md:text-lg lg:text-2xl dark:text-gray-400">Whether you need penetration testing, security consultation, or vulnerability assessments, I'm here to provide expert guidance that fits your organization's unique needs. 
+              <p className="mb-6 font-light text-gray-500 text-xl lg:text-2xl dark:text-gray-400">Whether you need penetration testing, security consultation, or vulnerability assessments, I'm here to provide expert guidance that fits your organization's unique needs. 
               </p>
             </div>
           </div>
@@ -365,7 +366,7 @@ const App: React.FC = () => {
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
             Book a consultation today – your security is my priority
             </h2>
-            <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+            <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 text-xl lg:text-2xl">
             Protect your digital assets and maintain customer trust with proactive security testing.
             </p>
             <form action="#" className="space-y-8">
