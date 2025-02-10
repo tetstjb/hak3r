@@ -1,4 +1,4 @@
-# HAK3R Portfolio
+# HAK3R Free Portfolio Website
 
 A modern, responsive portfolio template built specifically for cybersecurity professionals. Built with React, TypeScript, and Flowbite React components, it offers a sleek design with light/dark mode support.
 
