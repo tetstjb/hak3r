@@ -71,7 +71,7 @@ const App: React.FC = () => {
           style={{ opacity: 0 }}  // This ensures it's initially invisible but still rendered
         >
           <img
-            src="public/assets/images/hacker.png"
+            src="./assets/images/hacker.png"
             alt="hacker"
           />
         </div>
@@ -294,12 +294,12 @@ const App: React.FC = () => {
             <div className="grid grid-cols-2 gap-4 mt-8">
             <img
               className="w-full transition-all duration-300 hover:saturate-150 hover:brightness-75 hover:hue-rotate-15"
-              src="public/assets/images/office-long-2.png"
+              src="./assets/images/office-long-2.png"
               alt="office content 1"
             />
             <img
               className="mt-4 w-full lg:mt-10 transition-all duration-300 hover:saturate-150 hover:brightness-75 hover:hue-rotate-15"
-              src="public/assets/images/office-long-1.png"
+              src="./assets/images/office-long-1.png"
               alt="office content 2"
             />
           </div>
@@ -325,7 +325,7 @@ const App: React.FC = () => {
               <figcaption className="flex items-center justify-center mt-6 space-x-3">
               <img
                 className="w-6 h-6 rounded-full transition-opacity duration-300 hover:opacity-70"
-                src="public/assets/images/michael-gouch.png"
+                src="./assets/images/michael-gouch.png"
                 alt="profile picture"
               />
                 <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
@@ -344,7 +344,7 @@ const App: React.FC = () => {
           <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
             <img
               className="w-full transition-opacity duration-300 hover:opacity-70"
-              src="public/assets/images/data.png"
+              src="./assets/images/data.png"
               alt="dashboard image"
             />
             <div className="mt-4 md:mt-0">

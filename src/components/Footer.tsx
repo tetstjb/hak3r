@@ -57,6 +57,11 @@ const Footer: React.FC = () => {
           </span>
           <ul className="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
             <li>
+              Brought to you with ❤️ by <a href="https://getcyber.me" className="mr-4 hover:underline md:mr-6">
+                GetCyber.me
+              </a>
+            </li>
+            <li>
               <a href="/privacy" className="mr-4 hover:underline md:mr-6">
                 Privacy Policy
               </a>
